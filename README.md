@@ -8,77 +8,78 @@ A complete ML data pipeline for **speech emotion recognition** across **2 langua
 ## 📁 Project Structure
 
 ```
-├── CODE/
-│   ├── pipeline/
-│   │   ├── __init__.py
-│   │   ├── augment.py
-│   │   ├── config.py
-│   │   ├── eda.py
-│   │   ├── metadata.py
-│   │   └── preprocess.py
-│   │
-│   ├── main.py
-│   └── milestone 02.ipynb
+Machine Learning CEP/
 │
 ├── DATASET/
-│   ├── processed dataset/
-│   │   └── english/
-│   │        └── angry
-│   │        └── calm
-│   │        └── excited
-│   │        └── happy
-│   │        └── sad
-│   │        └── stressed
-│   │   
-│   │   └── urdu/
-│   │        └── angry
-│   │        └── calm
-│   │        └── excited
-│   │        └── happy
-│   │        └── sad
-│   │        └── stressed
-│   │   
-│   │   └── X_features.npy
-│   │   
-│   │   └── y_emotion.npy
-│   │   
-│   │   └── y_language.npy
-│   │   
 │   ├── raw dataset/
-│   │   └── english/
-│   │        └── angry
-│   │        └── calm
-│   │        └── excited
-│   │        └── happy
-│   │        └── sad
-│   │        └── stressed
-│   │   
+│   │   ├── english/
+│   │   │   ├── angry/
+│   │   │   ├── calm/
+│   │   │   ├── excited/
+│   │   │   ├── happy/
+│   │   │   ├── sad/
+│   │   │   └── stressed/
+│   │   │
 │   │   └── urdu/
-│   │        └── angry
-│   │        └── calm
-│   │        └── excited
-│   │        └── happy
-│   │        └── sad
-│   │        └── stressed
-│   │   
-│   │   └── .emptyFolderPlaceholder
-│   │   
-│   ├── processed_metadata (excel sheet)
-│   └── recordings_rows (excel sheet)
-│
-├── milestone 02 shots/
-│   ├── eda/
-│   │   └── (EDA plots and images go here)
+│   │       ├── angry/
+│   │       ├── calm/
+│   │       ├── excited/
+│   │       ├── happy/
+│   │       ├── sad/
+│   │       └── stressed/
 │   │
-│   ├── distribution bar.png
-│   ├── Waveform and Spectrogram Visualization - english.png
-│   └── Waveform and Spectrogram Visualization - urdu.png
+│   ├── processed dataset/
+│   │   ├── english/
+│   │   │   ├── angry/
+│   │   │   ├── calm/
+│   │   │   ├── excited/
+│   │   │   ├── happy/
+│   │   │   ├── sad/
+│   │   │   └── stressed/
+│   │   │
+│   │   └── urdu/
+│   │       ├── angry/
+│   │       ├── calm/
+│   │       ├── excited/
+│   │       ├── happy/
+│   │       ├── sad/
+│   │       └── stressed/
+│   │
+│   │   ├── X_features.npy
+│   │   ├── y_emotion.npy
+│   │   └── y_language.npy
+│   │
+│   ├── metadata/
+│   │   ├── processed_metadata.xlsx
+│   │   └── recordings_rows.xlsx
 │
-├── REQUIREMENTS/
-│   ├── pre requisite install.txt
-│   ├── requirement.txt
-├
-├── README
+├── version_02/
+│   ├── CODE/
+│   │   ├── pipeline/
+│   │   │   ├── __init__.ipynb
+│   │   │   ├── augment.ipynb
+│   │   │   ├── config.ipynb
+│   │   │   ├── eda.ipynb
+│   │   │   ├── metadata.ipynb
+│   │   │   └── preprocess.ipynb
+│   │   │
+│   │   ├── main.ipynb
+│   │   └── milestone 02.ipynb
+│   │
+│   ├── milestone 02 shots/
+│   │   ├── eda/
+│   │   │   └── (EDA plots images go here)
+│   │   │
+│   │   ├── distribution_bar.png
+│   │   ├── waveform_spectrogram_english.png
+│   │   └── waveform_spectrogram_urdu.png
+│   │
+│   ├── REQUIREMENTS/
+│   │   ├── pre requisite install.txt
+│   │   └── requirement.txt
+│   │
+│   └── README.md
+
 ```
 
 ---

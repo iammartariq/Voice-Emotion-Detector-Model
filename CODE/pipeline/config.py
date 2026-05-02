@@ -1,22 +1,35 @@
-# pipeline/config.py
 # Shared constants and paths for the CEP preprocessing pipeline.
 
 from pathlib import Path
 
-# ── Root paths ────────────────────────────────────────────────────────────────
-BASE_DIR      = Path(__file__).resolve().parent.parent   # CEP root
-RAW_DIR       = BASE_DIR / "dataset" / "raw"
-PROCESSED_DIR = BASE_DIR / "dataset" / "processed"
-EDA_DIR       = BASE_DIR / "dataset" / "eda"
-METADATA_CSV  = BASE_DIR / "dataset" / "processed_metadata.csv"
+# Root paths
+
+BASE_DIR      = Path(__file__).resolve().parent.parent.parent.parent # Since config.py is inside 'Machine Learning CEP/version_02/CODE/pipeline/'
+
+# DATASET Paths
+
+DATASET_DIR   = BASE_DIR / "DATASET"
+RAW_DIR       = DATASET_DIR / "raw dataset"
+PROCESSED_DIR = DATASET_DIR / "processed dataset"
+
+# METADATA Paths
+
+METADATA_DIR  = DATASET_DIR / "metadata"
+METADATA_FILE = METADATA_DIR / "processed_metadata.xlsx"
+
+# EDA Paths
+
+EDA_DIR       = BASE_DIR / "version 02" / "milestone 02 shots" / "eda"
 EDA_REPORT    = EDA_DIR / "eda_report.txt"
 
-# ── Audio settings ────────────────────────────────────────────────────────────
+# Audio settings
+
 TARGET_SR = 16_000   # sample rate (Hz)
 TOP_DB    = 30       # silence trim threshold (dB below peak)
 MIN_SECS  = 0.5      # discard clips shorter than this after trimming
 
-# ── Label encoding ────────────────────────────────────────────────────────────
+# Label encoding
+
 LABEL_MAP = {
     "calm":     0,
     "happy":    1,
